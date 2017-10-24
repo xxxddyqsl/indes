@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/ui-box.css">
+        <link rel="stylesheet" href="../css/ui-base.css">
+        <link rel="stylesheet" href="../css/ui-color.css">
+        <link rel="stylesheet" href="../css/appcan.icon.css">
+        <link rel="stylesheet" href="../css/appcan.control.css">
+        <style>
+            *{font-family: '微软雅黑'; }
+            #body_1 {
+                background: #F6F8FA;               
+            }
+            #header {
+                background: #354157;
+            }
+            .back {
+                background: url('img/jtkh_icon_white arrow.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 50% 70%;
+            }
+            .search {
+                background: url('img/jtkh_icon_magnifier.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 40% 50%;
+                /*visibility:hidden;*/
+            }
+
+        </style>
+
+    </head>
+
+    <body class="um-vp "id="body_1" ontouchstart>
+        <div id="page_0" class="up ub ub-ver " tabindex="0">
+            <!--header开始-->
+            <div id="header" class="uh bc-text-head ub bc-head">
+                <div class="nav-btn back" id="back"></div>
+                <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">集团客户TMC代理人与大客户</h1>
+                <div class="nav-btn nav-bt search" id="sstb"  flag="1"></div>
+            </div>
+            <!--header结束--><!--content开始-->
+            <div id="content" class="ub-f1 tx-l">
+
+            </div>
+            <!--content结束-->
+
+        </div>
+    </body>
+    <script src="../js/appcan.js"></script>
+    <script src="../js/mine.js"></script>
+    <script src="../js/appcan.control.js"></script>
+    <script>
+        var titHeight;
+        appcan.ready(function() {
+            titHeight = $('#header').offset().height;
+            appcan.frame.open("content", "jtDKHy_info_content.html", 0, titHeight);
+            window.onorientationchange = window.onresize = function() {
+                appcan.frame.resize("content", 0, titHeight);
+            }
+        });
+        appcan.button("#back", "btn-act", function() {
+            appcan.window.close(-1);
+            
+        })
+        $("#sstb").click(function() {
+            // titHeight = $('#header').offset().height;
+            appcan.window.open("content", "jtDKHy_the_search.html" );
+            //关闭页面
+            appcan.window.close();
+            // 打开页面       
+            window.onorientationchange = window.onresize = function() {
+                appcan.frame.resize("content", 0, titHeight);
+            }
+            // jtDKHy_search.html
+        })
+        
+        
+        
+        
+        
+        
+        // $("#sstb").click(function() {
+        // uexWindow.evaluatePopoverScript("", "content", "refreshContent()");
+        // //连接浮动页面方法  refreshContent()连接名
+        // })
+        //var aa=0;
+        
+        //在本页面打开搜索框
+        // $("#sstb").click(function() {
+            // if ($("#sstb").attr("flag") == "1") {
+                // appcan.window.openPopover({
+                    // name : "jtDKHy_search_fd",
+                    // url : "jtDKHy_search_fd.html",
+                    // left : 0,
+                    // top : titHeight,
+                    // height : document.body.titHeight
+                // });
+                // $("#sstb").attr("flag", "0");
+// 
+                // //连接浮动页面方法  refreshContent()连接名
+                // // uexWindow.evaluatePopoverScript("jtkh_tmc_dkhsjxq", "content", "refreshContent()");
+            // } else if ($("#sstb").attr("flag") == "0") {
+                // //$("#nav-right").attr("flag", "true");
+                // $("#sstb").attr("flag", "1")
+                // close();
+// 
+            // }
+        // })
+        // //关闭浮动窗口
+        // $(document.body).on('tap', function() {
+            // if (e.target.id != 'sstb') {
+                // close();
+            // };
+        // });
+        // function close() {
+            // appcan.window.closePopover({
+                // name : "jtDKHy_search_fd"
+                // // url: "qbxc_b_content.html",
+            // });
+        // }
+    </script>
+</html>

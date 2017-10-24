@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="../css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/ui-box.css">
+        <link rel="stylesheet" href="../css/ui-base.css">
+        <link rel="stylesheet" href="../css/ui-color.css">
+        <link rel="stylesheet" href="../css/appcan.icon.css">
+        <link rel="stylesheet" href="../css/appcan.control.css">
+        <style>
+            *{font-family: '微软雅黑';}
+            #ssk_d {
+                /*border:1px solid red;*/
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                padding-top: 1em;
+                display: none;
+                z-index: 100;
+            }
+            #ssk {
+                /*border:1px solid red;*/
+                background: #EDEBEB;
+                width: 90%;
+                height: 26em;
+                margin: 0 auto;
+                box-shadow: 0 2px 7px 0 rgba(44,8,8,0.50);
+                border-radius: 0.4em;
+                z-index: 10;
+            }
+            #cxtjwbk {
+                /*border: 1px solid #0000FF;/*/
+                height: 3em;
+            }
+            #cxtj {
+                text-align: center;
+                line-height: 3em;
+                font-size: 1.3em;
+                color: #000000;
+                letter-spacing: -0.92px;
+                font-weight: bolder;
+                /*border: 1px solid red;*/
+            }
+            #cxyfwbk {
+                /*border: 1px solid #0000FF;*/
+                text-align: center;
+                height: 3em;
+                line-height: 3em;
+            }
+            #cxyf {
+                font-size: 1em;
+                color: #606060;
+                letter-spacing: -0.82px;
+                font-weight: bolder;
+                width: 5em;
+                margin-left: 9%;
+                /*border: 1px solid red;*/
+            }
+            #datePickwbk {
+                /*border: 1px solid #15467F;*/
+
+            }
+            #datePick {
+                text-indent: 0.9em;
+                margin: 0 auto;
+                background: #FFFFFF;
+                border: 1px solid #979797;
+                border-radius: 0.4em;
+                height: 2.5em;
+                line-height: 2.5em;
+                background-image: url("img/jtkh_icon_bk_down.png" );
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position-x: 101%;
+                width: 80%;
+                /*padding-top: 0.6em;
+                 padding-bottom: 0.6em;*/
+            }
+
+            #srcyrwbk {
+                /*border:1px solid #0000FF;*/
+                text-align: center;
+                height: 3em;
+                line-height: 3em;
+            }
+            #srcyr {
+                font-size: 1em;
+                color: #606060;
+                width: 6em;
+                margin-left: 9%;
+                /*border:1px solid red;*/
+                letter-spacing: -0.82px;
+                font-weight: bolder;
+            }
+            #cyrsrk_0 {
+                text-align: center;
+                /*border: 1px solid red;*/
+            }
+            #cyrsrk {
+                background: #FFFFFF;
+                border: 1px solid #979797;
+                border-radius: 0.4em;
+                height: 2.5em;
+                width: 80%;
+                text-indent: 0.9em;
+                font-size: 1em;
+                text-transform: uppercase;
+                background-image: url("img/jtkh_icon_bk_down.png" );
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position-x: 101%;
+            }
+            #srdlrwbk {
+                /*border:1px solid #0000FF;*/
+                text-align: center;
+                height: 3em;
+                line-height: 3em;
+            }
+            #srdlrwbk {
+                font-size: 1em;
+                color: #606060;
+                width: 9em;
+                margin-left: 9%;
+                /*border:1px solid red;*/
+                letter-spacing: -0.82px;
+                font-weight: bolder;
+            }
+            #tmcdlrwbk {
+                text-align: center;
+                /*border: 1px solid red;*/
+               
+            }
+            #tmcdlr {
+                background: #FFFFFF;
+                border: 1px solid #979797;
+                border-radius: 0.4em;
+                height: 2.5em;
+                width: 80%;
+                text-indent: 0.9em;
+                font-size: 1em;
+                text-transform: uppercase;
+                /*background-image:url("img/jtkh_icon_bk_down.png" );
+                 background-repeat:no-repeat;
+                 background-size:contain;
+                 background-position-x:101%;*/
+            }
+            #czyxwbk {
+                /*border: 1px solid #000000;*/
+                height: 5.5em;
+            }
+            #czwbk {
+                /*border: 1px solid red;*/
+                width: 50%;
+                text-align: center;
+            }
+            #cz {
+                background: #AAAAAA;
+                border-radius: 1.5em;;
+                width: 65%;
+                height: 1.7em;
+                margin-left: 24%;
+                line-height: 1.7em;
+                font-size: 1.3em;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+            #yxcxwbk {
+                /*border: 1px solid red;*/
+                width: 50%;
+                text-align: center;
+            }
+            #yxcx {
+                margin-left: 12%;
+                background: #D93C33;
+                border-radius: 1.5em;
+                width: 65%;
+                height: 1.7em;
+                line-height: 1.7em;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+            #cyrxlk {
+                /*width:5em;*/
+                /*height:2em;*/
+                background: #FFFFFF;
+                border-radius: 0.2em;
+                position: relative;
+                /*background-color:red;*/
+                left: 0%;
+                top: 14.9em;
+                width: 72%;
+                z-index: 99;
+                display: block;
+            }
+            #cyrxlk > div {
+                /*border: 1px solid red;*/
+                width: 100%;
+                height: 2em;
+                text-indent: 3%;
+            }
+            .khmx {
+                width: 90%;
+                /*border:1px solid red;*/
+                height: auto;
+                margin: 0 auto;
+                padding-top: 1em;
+                text-align: center;
+                font-size: 1.58em;
+            }
+            .khmx > div:nth-child(1) {
+                /*border:1px solid red;*/
+                width: 100%;
+            }
+            .khmx > div:nth-child(2) {
+                /*border:1px solid red;*/
+                width: 100%;
+            }
+            .topmid {
+                width: 98%;
+                height: 7em;
+                margin: 0 auto;
+                /*border:1px solid red;*/
+            }
+            .topmid > div {
+                width: 31%;
+                height: 5.5em;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 100% 5.5em;
+                padding-top: 0.1em;
+            }
+            .top_1 {
+                /*background-image: url('img/jtkh_bg_yellow.png');*/
+                background:#DEBC6D ;
+                border-radius: 0.4em;
+            }
+
+            .top_2 {
+                margin-left: 3.8%;
+                border-radius: 0.4em;
+                /*background-image: url('img/jtkh_bg_red.png');*/
+                background:#df5593 ;
+            }
+            .top_3 {
+                margin-left: 3.8%;
+                border-radius: 0.4em;
+                /*background-image: url('img/jtkh_bg_blue.png');*/
+               background: #4A90e2;
+            }
+            .top_4 > div {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 0.5em;
+                color: white;
+            }
+
+            .lx {
+                width: 100%;
+                border-top: 1px solid #979797;
+                height: 2.5em;
+                font-size: 1.28em;
+                /*border: 1px solid red; */
+            }
+            .lx > div:nth-child(1) {
+                text-align: right;
+                width: 3.6em;
+                color: #8F8F8F;
+            }
+            #lxxl {
+                color: #D93C33;
+                text-align: left;
+
+            }
+            #lxxltb {
+                width: 1.5em;
+                height: 1.5em;
+                background-image: url("img/jtkh_icon_arrow.png");
+                background-position-x: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .jtxlqh {
+                background: #FFFFFF;
+                position: absolute;
+                width: 16em;
+                border: 1px solid #bfbfbf;
+                margin-left: 5em;
+                z-index: 9;
+                display: none;
+            }
+            .jtxlqh > div:nth-child(1) {
+                width: 100%;
+                height: 3em;
+                text-indent: 5%;
+                font-weight: bolder;
+                line-height: 3em;
+                border-bottom: 1px solid #d7d7d7;
+            }
+            .jtxlqh > div:nth-child(2) {
+                width: 100%;
+                height: 3em;
+                text-indent: 5%;
+                font-weight: bolder;
+                line-height: 3em;
+                border-bottom: 1px solid #d7d7d7;
+            }
+            .jtxlqh > div:nth-child(3) {
+                width: 100%;
+                height: 3em;
+                text-indent: 5%;
+                font-weight: bolder;
+                line-height: 3em;
+                /*border-bottom: 1px solid #d7d7d7;*/
+            }
+            #ymd {
+                width: 100%;
+                background-color: #EDEDED;
+                font-size: 1em;
+                height: auto;
+                border: 1px solid #979797;
+                border-left: none;
+                border-right: none;
+            }
+            .khbh > div:nth-child(1) {
+                padding-top: 0.3em;
+                padding-bottom: 0.3em;
+                width: 20%;
+                text-align: center;
+                color: #0168D9;
+                font-weight: bolder;
+            }
+            .khbh > div:nth-child(2) {
+                color: #000000;
+                width: 80%;
+                font-weight: bolder;
+                text-align: left;
+                text-indent: 2%;
+            }
+            #jtkhlx {
+                /*margin-left:0.5em;*/
+                padding-top: 0.2em;
+                border: 1px solid #D6D6D6;
+                width: 100%;
+                color: #989898;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                /*display: none;*/
+            }
+            #jtkhlx > div:nth-child(1)> div:nth-child(1) {
+                width: 20%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #jtkhlx > div:nth-child(1)> div:nth-child(2) {
+                width: 20%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #jtkhlx > div:nth-child(1)> div:nth-child(3) {
+                width: 20%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #jtkhlx > div:nth-child(1)> div:nth-child(4) {
+                width: 20%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #jtkhlx > div:nth-child(1)> div:nth-child(5) {
+                width: 20%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+
+            #gjxlhx {
+                /*margin-left:0.5em;*/
+                border: 1px solid #D6D6D6;
+                width: 100%;
+                color: #989898;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                display: none;
+            }
+
+            #gjxlhx > div:nth-child(1)> div:nth-child(1) {
+                width: 21%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gjxlhx > div:nth-child(1)> div:nth-child(2) {
+                width: 12%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gjxlhx > div:nth-child(1)> div:nth-child(3) {
+                width: 21%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gjxlhx > div:nth-child(1)> div:nth-child(4) {
+                width: 12%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gjxlhx > div:nth-child(1)> div:nth-child(5) {
+                width: 21%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gjxlhx > div:nth-child(1)> div:nth-child(6) {
+                width: 12%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+
+            #gnxlhx {
+                /*margin-left:0.5em;*/
+                border: 1px solid #D6D6D6;
+                width: 100%;
+                color: #989898;
+                border-left: none;
+                border-right: none;
+                border-bottom: none;
+                display: none;
+            }
+            #gnxlhx > div:nth-child(1)> div:nth-child(1) {
+                width: 20%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gnxlhx > div:nth-child(1)> div:nth-child(2) {
+                width: 12%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gnxlhx > div:nth-child(1)> div:nth-child(3) {
+                width: 20%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gnxlhx > div:nth-child(1)> div:nth-child(4) {
+                width: 12%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gnxlhx > div:nth-child(1)> div:nth-child(5) {
+                width: 20%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+            #gnxlhx > div:nth-child(1)> div:nth-child(6) {
+                width: 12%;
+                height: 3em;
+                /*border: 1px solid red;*/
+                text-align: center;
+            }
+          
+            .khsrxq_0 > div:nth-child(odd) {
+                height: auto;
+                background-color: white;               
+               
+            }
+            .khsrxq_0 > div:nth-child(even) {
+                background-color: #F7F7F7;
+            }
+            .khsrxq {
+                /*border: 1px solid red;*/
+                width: 100%;
+            }
+
+            .khxq_0 {
+                /*border: 1px solid red;*/
+                border-bottom: 1px solid #d9d9d9;
+                height: 2.5em;
+                margin-left: 0.5em;
+                width: 98%;
+            }
+            .khxq_0 > div:nth-child(1) {
+                /*border: 1px solid red;*/
+                /*color:#0168D9;*/
+                text-align: center;
+                width: 19%;
+                /*text-decoration:underline;*/
+            }
+
+            .khxq_0 > div:nth-child(2) {
+                width: 80%;
+                word-wrap: break-word;
+                text-align: left;
+                /*border: 1px solid red;*/
+                text-indent: 2%;
+            }
+            .khsr {
+                height: 2em;
+            }
+            .khsr > div:nth-child(1) {
+                width: 20%;
+                text-align: center;
+            }
+            .khsr > div:nth-child(2) {
+                width: 20%;
+                text-align: center;
+            }
+            .khsr > div:nth-child(3) {
+                width: 20%;
+                text-align: center;
+            }
+            .khsr > div:nth-child(4) {
+                width: 20%;
+                text-align: center;
+                color: red;
+            }
+            .khsr > div:nth-child(5) {
+                width: 20%;
+                text-align: center;
+                color: red;
+            }
+
+            .gjsrxq_0 {
+                /*border: 1px solid #000000;*/
+                height: auto;
+                display: none;
+            }
+            .gjsrxq {
+                /*border: 1px solid red;*/
+                width: 100%;
+            }
+            .gjsrxq_0 > div:nth-child(odd) {
+                background-color: white;
+            }
+            .gjsrxq_0 > div:nth-child(even) {
+                background-color: #F7F7F7;
+            }
+
+            .gjxq_0 {
+                /*border: 1px solid red;*/
+                border-bottom: 1px solid #d9d9d9;
+                height: 2.5em;
+                /*margin-left: 0.5em;*/
+                width: 98%;
+            }
+            .gjxq_0 > div:nth-child(1) {
+                /*border: 1px solid red;*/
+                /*color:#0168D9;*/
+                text-align: center;
+                width: 20%;
+                /*text-decoration:underline*/
+            }
+
+            .gjxq_0 > div:nth-child(2) {
+                /*border: 1px solid red;*/
+                width: 80%;
+                word-wrap: break-word;
+                text-align: left;
+                text-indent: 2%;
+            }
+            .gjsr {
+                /*margin-left: 1em;*/
+                height: 4em;
+            }
+            /*.dyck{
+             border: 1px solid red;
+             }*/
+            .dyck > div:nth-child(1) {
+                width: 70%;
+                white-space: nowrap;
+                text-align: center;
+                /*border: 1px solid red;*/
+            }
+            .dyck > div:nth-child(2) {
+                text-align: right;
+                color: red;
+            }
+            .gjsr > div:nth-child(1) {
+                width: 33%;
+                text-align: center;
+            }
+            /*.derck{
+             border: 1px solid red;
+             }*/
+            .gjsr > div:nth-child(2) {
+                width: 33%;
+                text-align: center;
+            }
+            .derck > div:nth-child(1) {
+                width: 70%;
+                white-space: nowrap;
+                text-align: center;
+                /*border: 1px solid red;*/
+            }
+            .derck > div:nth-child(2) {
+                text-align: right;
+                color: red;
+            }
+            /*.dsck{
+             border: 1px solid red;
+             }*/
+            .gjsr > div:nth-child(3) {
+                width: 33%;
+                text-align: center;
+            }
+            .dsck > div:nth-child(1) {
+                width: 70%;
+                white-space: nowrap;
+                text-align: center;
+                /*border: 1px solid red;*/
+            }
+            .dsck > div:nth-child(2) {
+                text-align: right;
+                color: red;
+            }
+
+            .gnsrxq_0 {
+                /*border: 1px solid #000000;*/
+                height: auto;
+                display: none;
+            }
+            .gnsrxq {
+                /*border: 1px solid red;*/
+                width: 100%;
+            }
+            .gnsrxq_0 > div:nth-child(odd) {
+                background-color: white;
+            }
+            .gnsrxq_0 > div:nth-child(even) {
+                background: #F7F7F7;
+            }
+
+            .gnxq_0 {
+                /*border: 1px solid red;*/
+                border-bottom: 1px solid #d9d9d9;
+                height: 2.5em;
+                margin-left: 0.5em;
+                width: 98%;
+            }
+            .gnxq_0 > div:nth-child(1) {
+                /*border: 1px solid red;*/
+                /*color:#0168D9;*/
+                text-align: center;
+                width: 19%;
+                /*text-decoration:underline*/
+            }
+
+            .gnxq_0 > div:nth-child(2) {
+                /*border: 1px solid red;*/
+                width: 80%;
+                word-wrap: break-word;
+                text-align: left;
+                text-indent: 2%;
+            }
+            .gnsr {
+                /*margin-left: 1em;*/
+                height: 4em;
+            }
+            /*.gndyck{
+             border: 1px solid red;
+             }*/
+            .gnsr > div:nth-child(1) {
+                width: 33%;
+                text-align: center;
+            }
+            .gndyck > div:nth-child(1) {
+                width: 70%;
+                text-align: center;
+            }
+            .gndyck > div:nth-child(2) {
+                color: red;
+                text-align: right;
+            }
+            .gnsr > div:nth-child(2) {
+                width: 33%;
+                text-align: center;
+            }
+            .gnderck > div:nth-child(1) {
+                width: 70%;
+                text-align: center;
+            }
+            .gnderck > div:nth-child(2) {
+                color: red;
+                text-align: right;
+            }
+            .gnsr > div:nth-child(3) {
+                width: 33%;
+                text-align: center;
+            }
+            .gndsck > div:nth-child(1) {
+                width: 70%;
+                text-align: center;
+            }
+            .gndsck > div:nth-child(2) {
+                color: red;
+                text-align: right;
+            }
+
+        </style>
+    </head>
+    <body id='bbb' class="um-vp  ub ub-ver" ontouchstart>
+        <!-- 搜索框开始 -->
+        <div id="ssk_d">
+            <div id="ssk">
+                <div id="cxtjwbk">
+                    <div id="cxtj">
+                        查询条件
+                    </div>
+                </div>
+                <div id="cxyfwbk">
+                    <div id="cxyf">
+                        查询月份
+                    </div>
+                </div>
+                <div id="datePickwbk">
+                    <div class="text" id="datePick" ST_date="" class="yfsrk" ></div>
+                </div>
+                <div  id="srcyrwbk">
+                    <div id="srcyr">
+                        输入承远人
+                    </div>
+                </div>
+                <div id="cyrsrk_0">
+                    <input id="cyrsrk" onkeyup="this.value=this.value.replace(/[^a-zA-Z\,]+/g, '')"/>
+                </div>
+                <div id="srdlrwbk">
+                    <div id="srdlr">
+                        输入TMC代理人
+                    </div>
+                </div>
+                <div id="tmcdlrwbk">
+                    <input id="tmcdlr" value="东美"/>
+                </div>
+                <div id="czyxwbk" class="ub ub-ac">
+                    <div id="czwbk" >
+                        <div id="cz">
+                            重置
+                        </div>
+                    </div>
+                    <div id="yxcxwbk">
+                        <div id="yxcx">
+                            运行查询
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 搜索框结束 -->
+            <!-- 存储显示样式 -->
+            <div id="cyrxlk"></div>
+        </div>
+
+        <div>
+            <div class="khmx">
+                <div class=" ub ub-ac ub-pc" >
+                    <span class="cxn">---年---</span>月集团客户部TMC
+                </div>
+                <div class=" ub ub-ac ub-pc">
+                    代理人"<span class="dlkhm">---</span>"与大客户
+                </div>
+            </div>
+            <div class="ub ub-ac topmid" >
+                <div class="top_1 top_4">
+                    <div>
+                        代理人月度总销售量(万元)
+                    </div>
+                    <div class="dlrxsl">
+                        ---
+                    </div>
+                </div>
+                <div class="top_2 top_4">
+                    <div>
+                        国内航线月度总销售量(万元)
+                    </div>
+                    <div class="gnhxxsl">
+                        ---
+                    </div>
+                </div>
+                <div class="top_3 top_4">
+                    <div>
+                        国际航线月度总销售量(万元)
+                    </div>
+                    <div class="gjhxxsl">
+                        ---
+                    </div>
+                </div>
+            </div>
+            <div class="lx ub ub-ac">
+                <div>
+                    类型&nbsp;:&nbsp;
+                </div>
+                <div class="ub ub-ac"  id="lxxl_0">
+                    <div id="lxxl">
+                        集团客户收入(含燃油)(万元)
+                    </div>
+                    <div id="lxxltb"></div>
+                </div>
+            </div>
+            <div class="jtxlqh">
+                <div id="khsr" class="gn" sele>
+                    集团客户收入(含燃油)(万元)
+                </div>
+                <div id="gjxl" class="gn" sele>
+                    国际销量航线
+                </div>
+                <div id="gnxl" class="gn" sele>
+                    国内销量航线
+                </div>
+            </div>
+
+            <div id="ymd">
+                <div class="khbh ub ub-ac">
+                    <div>
+                        客户编号
+                    </div>
+                    <div>
+                        集团客户名称
+                    </div>
+                </div>
+                <div id="jtkhlx" >
+                    <div class="ub ub-ac">
+                        <div>
+                            <div>
+                                集团客户
+                            </div>
+                            <div>
+                                收入
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                国内集团
+                            </div>
+                            <div>
+                                客户收入
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                国际集团
+                            </div>
+                            <div>
+                                客户收入
+                            </div>
+                        </div>
+                        <div>
+                            销量同比
+                        </div>
+                        <div>
+                            销量环比
+                        </div>
+                    </div>
+                </div>
+                <div id="gjxlhx">
+                    <div class="ub ub-ac">
+                        <div>
+                            <div>
+                                国际销量
+                            </div>
+                            <div>
+                                第一航线
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                销售
+                            </div>
+                            <div>
+                                占比
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                国际销量
+                            </div>
+                            <div>
+                                第二航线
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                销售
+                            </div>
+                            <div>
+                                占比
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                国际销量
+                            </div>
+                            <div>
+                                第三航线
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                销售
+                            </div>
+                            <div>
+                                占比
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gnxlhx" >
+                    <div class="ub ub-ac">
+                        <div>
+                            <div>
+                                国内销量
+                            </div>
+                            <div>
+                                第一航线
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                销售
+                            </div>
+                            <div>
+                                占比
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                国内销量
+                            </div>
+                            <div>
+                                第二航线
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                销售
+                            </div>
+                            <div>
+                                占比
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                国内销量
+                            </div>
+                            <div>
+                                第三航线
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                销售
+                            </div>
+                            <div>
+                                占比
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="khsrxq_0">
+                <!-- <div class="khsrxq">
+                <div class="khxq_0 ub ub-ac">
+                <div>9901582</div>
+                <div>上海通用汽车有限公司</div>
+                </div>
+                <div class="khsr ub ub-ac">
+                <div>172.1</div>
+                <div>177.2</div>
+                <div>172.1</div>
+                <div>177.2</div>
+                <div>172.1</div>
+                </div>
+                </div> -->
+            </div>
+
+            <div class="gjsrxq_0">
+                <!-- <div class="gjsrxq">
+                <div class="gjxq_0 ub ub-ac">
+                <div>9901582</div>
+                <div>上海通用汽车有限公司</div>
+                </div>
+                <div class="gjsr ub ub-ac">
+                <div>PVG-CDG</div>
+                <div>0.56%</div>
+                <div>PVG-ICG</div>
+                <div>0.56%</div>
+                <div>PVG-CDG</div>
+                <div>0.56%</div>
+                </div>
+                </div> -->
+            </div>
+
+            <div class="gnsrxq_0">
+                <!-- <div class="gnsrxq">
+                <div class="gnxq_0 ub ub-ac">
+                <div>9901582</div>
+                <div>上海通用汽车有限公司</div>
+                </div>
+                <div class="gnsr ub ub-ac">
+                <div>PVG-CDG</div>
+                <div>0.88%</div>
+                <div>PVG-ICG</div>
+                <div>0.88%</div>
+                <div>PVG-CDG</div>
+                <div>0.88%</div>
+                </div>
+                </div>
+                -->
+            </div>
+
+        </div>
+
+    </body>
+    <script src="../js/appcan.js"></script>
+    <script src="../js/appcan.control.js"></script>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/commo.js"></script>
+
+    <script>
+        var ytiaoj = "";
+        var cyrlsgjz = JSON.parse(window.localStorage.getItem("lsjlsa")) || ["FM", "KN", "MU"];
+        //将默认值进行存储并且用JSON.parse转成字符串
+        appcan.ready(function() {
+            dlrcxy();
+            //uexWindow.subscribeChannelNotification("dlr_y", "onNotification");
+            //显示最后一条信息
+            uexWindow.onNotification = function(cb) {
+                eval(cb);
+            };
+            appcan.window.openToast("正在加载数据...", 0, 5, 0);
+            $("#cyrsrk").val(cyrlsgjz);
+            var tDate = new Date();
+            var nM = tDate.getMonth();
+            var nN = tDate.getFullYear();
+            var xx = nN - 1;
+            var sy = nN + "." + xx
+            if (xx < 10) {
+                var sy = nN + "." + "0" + xx;
+            } else {
+                var sy = nN + "." + xx;
+            };
+            if (nM < 10) {
+                var nM = "0" + nM;
+                var nowDate = nN + "年" + nM + "月";
+                var newDate = nN + "-" + nM;
+            } else {
+                var nowDate = nN + "年" + nM + "月";
+                var newDate = nN + "-" + nM;
+            };
+            var sn = nN - 1 + "." + nM;
+            var jiny = nN + "." + nM;
+            $("#datePick").text(nowDate);
+            $("#datePick").attr("ST_date", newDate);
+            $("#datePick").attr("jiny", jiny);
+            $("#datePick").attr("syue", sy);
+            $("#datePick").attr("snian", sn);
+
+            $("#cyrsrk").val(cyrlsgjz);
+            //把默认值放在id #cyrsrk的val值里面
+            //getInfo();
+
+            ytiaoj = JSON.parse(localStorage.getItem('shy_k', ytiaoj));
+            var dateStr = ytiaoj.yuef;
+            //  年时间 月时间
+            var carrier = ytiaoj.cur;
+            //   承运人  MU FM
+            var tmcName = ytiaoj.dlr;
+            //获取TMC代理人
+            //数据类型是string  字符串
+            //使用replace()方法 2017-06改成2017年06  找到里面的-替换成年
+            var clsjly = dateStr.replace(/-/, "年");
+            //clsjly传入.cxn
+            $('.cxn').html(clsjly);
+            $('.dlkhm').html(tmcName);
+            getInfo(dateStr, carrier, tmcName);
+            //启 动接口
+            // format();
+        });
+        // $('#ssk_d').get(0).touchmove = function(){
+        // return false;
+        // }
+
+        //阻止冒泡
+        $("#cyrxlk").on("click", zzmp);
+        $("#cyrsrk").on("click", zzmp);
+        function zzmp() {
+            event.stopPropagation();
+        };
+        $("#ssk").click(function(event) {
+            event.stopPropagation();
+        })
+        $("#ssk_d").click(function(event) {
+            event.stopPropagation();
+            $(this).css("display", "none");
+            $('#xlk').css("display", "none");
+            $(".xllr").css("display", "none");
+        });
+
+        function refreshContent() {
+            //判断是否隐藏显示
+            var xxxx = $("#ssk_d").css("display");
+            if (xxxx == "none") {
+                $("#ssk_d").css("display", "block");
+                $('#xlk').css("display", "none");
+                $(".xllr").css("display", "none");
+            } else {
+                $("#ssk_d").css("display", "none");
+            }
+        }
+
+
+        $('#lxxl_0').on('click', function(event) {
+            event.stopPropagation();
+            var xlcd = $(".jtxlqh").css("display");
+            if (xlcd == "none") {
+                $(".jtxlqh").css("display", "block");
+            } else {
+                $(".jtxlqh").css("display", "none");
+            }
+        })
+        $(".gn").on("click", xuanze)
+        function xuanze() {
+            var df = $(this).html();
+            //获取国内国际等地址
+            $("#lxxl").html(df)//把国内国际等地址值传进去
+            $(".jtxlqh").css("display", "none");
+
+        }
+
+
+        $("#khsr").on("click", djqh_c)
+        function djqh_c() {
+            var xxxx = $("#jtkhlx").css("display");
+            if (xxxx == "none") {
+                $("#gjxlhx").css("display", "none");
+                $("#jtkhlx").css("display", "block");
+                $("#gnxlhx").css("display", "none");
+                $(".khsrxq_0").css("display", "block");
+                $(".gjsrxq_0").css("display", "none");
+                $(".gnsrxq_0").css("display", "none");
+            }
+
+        }
+
+
+        $("#gjxl").on("click", djqh_a)
+        function djqh_a() {
+            var xxxx = $("#gjxlhx").css("display");
+            if (xxxx == "none") {
+                $("#gjxlhx").css("display", "block");
+                $("#jtkhlx").css("display", "none");
+                $("#gnxlhx").css("display", "none");
+                $(".gjsrxq_0").css("display", "block");
+                $(".khsrxq_0").css("display", "none");
+                $(".gnsrxq_0").css("display", "none");
+            }
+
+        }
+
+
+        $("#gnxl").on("click", djqh_b)
+        function djqh_b() {
+            var xxxx = $("#gnxlhx").css("display");
+            if (xxxx == "none") {
+                $("#gjxlhx").css("display", "none");
+                $("#jtkhlx").css("display", "none");
+                $("#gnxlhx").css("display", "block");
+                $(".gnsrxq_0").css("display", "block");
+                $(".gjsrxq_0").css("display", "none");
+                $(".khsrxq_0").css("display", "none");
+            }
+
+        }
+
+        var dqxz = null;
+        //空数组
+        $("[sele]").click(function(e) {//点击国内，国际时
+            e.stopPropagation();
+            var xlcd = $(".jtxlqh ").css("display");
+            //判断当前操作和之前操作是不是同一个对象
+            if (dqxz == this) {
+                // 是同一个对象并且为none时的操作
+                if (xlcd == "none") {
+                    //$(this).next().css("display", "block")//当前操作显示
+                    $(this).css("background", "#D8D8D8")
+                    //当前操作背景变红
+                }
+            } else {
+                //和之前的操作不是同一个对象时
+                $(dqxz).css("background", "#ffffff");
+                //上一个操作背景变白
+                $(this).css("background", "#D8D8D8");
+                //当前操作背景变红
+                //$(this).next().css("display", "block");//当前操作显示
+            }
+            dqxz = this;
+            //保存当前点击对象
+
+        });
+        //点击body
+        $(document).on('click', function(event) {
+            event.stopPropagation();
+            $('.jtxlqh').css("display", "none");
+        })
+        // //阻止冒泡
+        // $("#cyrxlk").on("click",zzmp);
+        // $("#cyrsrk").on("click",zzmp);
+        // function zzmp() {
+        // event.stopPropagation();
+        // };
+
+        $('#ssk_d').click(function() {
+            event.stopPropagation();
+            $("#cyrxlk").css("display", "none");
+        });
+
+        var cyrlsgjz = JSON.parse(window.localStorage.getItem("lsjlsa")) || ["FM", "KN", "MU"];
+        appcan.ready(function() {
+            $("#cyrsrk").val(cyrlsgjz);
+            var tDate = new Date();
+            var nM = tDate.getMonth();
+            var nN = tDate.getFullYear();
+            var xx = nN - 1;
+            var sy = nN + "." + xx
+            if (xx < 10) {
+                var sy = nN + "." + "0" + xx;
+            } else {
+                var sy = nN + "." + xx;
+            };
+            if (nM < 10) {
+                var nM = "0" + nM;
+                var nowDate = nN + "年" + nM + "月";
+                var newDate = nN + "-" + nM;
+            } else {
+                var nowDate = nN + "年" + nM + "月";
+                var newDate = nN + "-" + nM;
+            };
+            var sn = nN - 1 + "." + nM;
+            var jiny = nN + "." + nM;
+            $("#datePick").text(nowDate);
+            $("#datePick").attr("ST_date", newDate);
+            $("#datePick").attr("jiny", jiny);
+            $("#datePick").attr("syue", sy);
+            $("#datePick").attr("snian", sn);
+
+            // document.getElementById("datePick").innerHTML=dealtime(nowDate);
+        });
+
+        //运行查询
+        var lsjl;
+        $("#yxcx").click(function() {
+            //获取查询月份的值
+            var ipyf = $("#datePick").attr("ST_date");
+            //获取查询承运人的值
+            var ipcyr = $("#cyrsrk").val();
+            //获取查询TMC代理人的值
+            var inpval = $("#tmcdlr").val();
+            var clsjly = ipyf.replace(/-/, "年");
+            $('.cxn').html(clsjly);
+            $('.dlkhm').html(inpval);
+            if (inpval == "" || ipyf == "" || ipcyr == "") {
+                appcan.window.alert({
+                    title : "提示",
+                    content : "搜索条件不足",
+                    buttons : ['确定'],
+                    callback : function(err, data, dataType, optId) {
+                        // appcan.window.open("jthsymtmc-y","jthsymtmc-y.html")//点击运行查询跳转页面
+                        uexWindow.evaluateScript("", 0, "appcan.window.close(-1)")
+                    }
+                });
+                return
+            }
+
+            var inpval = $("#cyrsrk").val();
+            // 获取id #cyrsrk的val值
+            var len = cyrlsgjz.length;
+            // 获取上面存储默认值的长度
+            var t = 0;
+            for (var i = 0; i < len; i++) {
+                if (cyrlsgjz[i] != inpval) {
+                    t += 1;
+                }
+            };
+            if (t == 3) {
+                cyrlsgjz.pop();
+                //删除最早的
+                cyrlsgjz.unshift(inpval);
+                //添加新搜索的元素
+
+                window.localStorage.setItem("lsgjza", JSON.stringify(len));
+            }
+            //获取查询月份的值
+            var sryf = $("#datePick").attr("ST_date");
+            //获取查询承运人的值
+            var srcyr = $("#cyrsrk").val();
+            //获取查询TMC代理人的值
+            var srdlr = $('#tmcdlr').val();
+            //.toUpperCase();查询承运人的值必须大写
+            var srcyr = $("#cyrsrk").val().toUpperCase();
+
+            //判断承运人里面的值是否是符合条件的，条件是2个英文字母和逗号组成；
+            var zwdhzc = /^(?:[a-zA-Z]{2},)*[a-zA-Z]{2}$/.test(srcyr);
+            if (zwdhzc == false) {
+                appcan.window.alert({
+                    title : '提示',
+                    content : '有非法字符！如：FM,KN,MU',
+                    buttons : ['确定'],
+                    // callback:function(err,data,dataType,optId){
+                    // uexWindow.evaluateScript("", 0,"appcan.window.close(-1)");
+                    // }
+                });
+                appcan.window.closeToast();
+                return
+            }
+
+            var ytiaoja = {};
+            ytiaoja.yuef = sryf;
+            ytiaoja.cur = srcyr;
+            ytiaoja.dlr = srdlr;
+            ytiaoja = JSON.stringify(ytiaoja);
+            localStorage.setItem('shy_k', ytiaoja);
+            //开始存储
+            lsjl = window.localStorage.getItem("lsjls");
+            //历史记录
+            if (lsjl) {
+                //历史记录存在有内容时
+                lsjl = JSON.parse(lsjl);
+                //历史记录字符串转成数组
+            } else {
+                lsjl = [];
+                //否则历史记录为空数组
+            }
+            var ksz = [];
+            //空数组
+            ksz.push(srcyr);
+            //现在的记录
+            var szpj = lsjl.concat(ksz);
+            //数组拼接
+            if (szpj.length > 5) {
+                //判断历史记录大于5个时
+                szpj.shift();
+                //判断历史记录大于5个时最早的搜索去掉；
+            };
+            window.localStorage.setItem("lsjls", JSON.stringify(szpj));
+            //本地存储只能存储字符串，所以把历史记录数组转字符串
+
+            $("#ssk_d").css("display", "none");
+            //点击运行查询搜索框隐藏
+            //appcan.window.open("jttmcy","jttmcy.html")//点击运行查询跳转页面
+            appcan.window.openToast("正在加载数据...", 0, 5, 0);
+            //把获取的搜索条件时间 ，条件承运人  ，条件代理人  val()值存储起来，赋给接口所需的搜索值
+            ytiaoj = JSON.parse(localStorage.getItem('shy_k', ytiaoj));
+            //搜索条件时间  赋给接口  搜索时间
+            var dateStr = ytiaoj.yuef;
+            //搜索条件承运人     赋给接口  搜索承运人
+            var carrier = ytiaoj.cur;
+            // 搜索条件代理人 赋给接口  搜索代理人
+            var tmcName = ytiaoj.dlr;
+            getInfo(dateStr, carrier, tmcName);
+            //启 动接口
+
+        });
+        function dlrcxy() {
+            appcan.window.openToast("正在加载数据...");
+            ytiaoj = JSON.parse(localStorage.getItem('shy_k', ytiaoj));
+            var dateStr = ytiaoj.yuef;
+            var carrier = ytiaoj.cur;
+            var tmcName = ytiaoj.dlr;
+
+            var clsjly = dateStr.replace(/-/, "年");
+            $('.cxn').html(clsjly);
+            $('.dlkhm').html(tmcName);
+            getInfo(dateStr, carrier, tmcName);
+            //启 动接口
+        };
+        //focus 获取焦点事件
+        $("#cyrsrk").focus(function() {
+            //当输入框#cyrsrk不等于0时历史记录 框隐藏
+            if ($(this).val().length != 0) {
+                $("#cyrxlk").css("display", "none")
+            } else {
+                $("#cyrxlk").css("display", "block")
+            };
+            var lsjl = window.localStorage.getItem("lsjls");
+            //历史记录//历史记录不为空时
+            if (!lsjl) {
+                return 
+                //执行return退出
+            } else {
+                lsjl = JSON.parse(lsjl);
+                //历史记录的字符串解析成数组
+                lsjl.reverse();
+                //历史记录数组从后向前显示
+            };
+            var kbl_2 = "";
+            //空字符串
+            for (var i = 0; i < lsjl.length; i++) {
+                kbl_2 += "<div class='imm ub ub-ac'>" + lsjl[i] + "</div>";
+                //给空字符串拼接历史记录
+            };
+            $("#cyrxlk").html(kbl_2);
+            //把历史记录打印到页面#cyrxlk框里
+            //历史记录不为空时
+            $(".imm").click(function() {
+                $("#cyrsrk").val($(this).text());
+                //点击历史记录某一项打印到input框里
+                $("#cyrxlk").css("display", "none")
+                //点击历史记录某一项，历史记录框隐藏
+            })
+        })
+        //bind绑定input事件监听
+        $("#cyrsrk").bind('input propertychange', function() {
+           //当框内的文字长度不等于0时
+            if ($(this).val().length != 0) {
+                $("#cyrxlk").css("display", "none")
+            } else {
+                $("#cyrxlk").css("display", "block")
+            };
+
+        });
+
+        //点击重置;
+        $("#cz").click(function() {
+            var tDate = new Date();
+            var nM = tDate.getMonth();
+            var nN = tDate.getFullYear();
+            var xx = nM - 1;
+            var sy_a = nN + "." + xx;
+            if (xx == 0) {
+                var qN = nN - 1;
+                var sy = qN + "." + '12';
+            } else {
+                var sy = nN + "." + xx;
+            };
+            if (xx < 10) {
+                var sy = nN + "." + '0' + xx;
+            } else {
+                var sy = nN + "." + xx;
+            };
+            if (nM < 10) {
+                var nM = "0" + nM;
+                var nowDate = nN + "年" + nM + "月";
+                var newDate = nN + "-" + nM;
+            } else {
+                var nowDate = nN + "年" + nM + "月";
+                var newDate = nN + "-" + nM;
+            };
+
+            var jny = nN + "-" + nM;
+
+            var sn = nN - 1 + "." + nM;
+            var jiny = nN + "." + nM;
+
+            $("#datePick").text(nowDate);
+            $("#datePick").attr("ST_date", jny);
+            $("#datePick").attr("jiny", jiny);
+            $("#datePick").attr("syue", sy_a);
+            $("#datePick").attr("snian", sn);
+            $("#cyrsrk").val("FM,KN,MU");
+            $("#tmcdlr").val("东美");
+        })
+        //获取日期插件
+        $("#datePick").on("tap", datePick);
+        var ST_D = iG.getYear() + "年" + iG.getMonth() + "月";
+        // $("[ST_date]").text(ST_D);
+        function datePick() {
+            var datase = {
+                year : iG.getYear(),
+                month : iG.getMonth(),
+                day : iG.getDay()
+            }
+            $("#datePick").attr("ST_date", JSON.stringify(datase));
+            var that = $(this);
+            var date = JSON.parse($("#datePick").attr("ST_date"))
+            uexControl.openDatePicker(date.year, date.month, date.day);
+            uexControl.cbOpenDatePicker = function(opCode, dataType, data) {
+                if (dataType == 1) {
+                    data = eval('(' + data + ')');
+                } ;
+                if (iG.getYear() > data.year | (iG.getYear() == data.year & iG.getMonth() > data.month) | (iG.getYear() == data.year & iG.getMonth() == data.month & iG.getDay() <= data.day)) {
+                    setDate_s(that, data.year, data.month, data.day);
+                    ST_D = data.year + "-" + data.month + "-" + data.day;
+                } else {
+                    appcan.window.openToast("只能查看本月以前的数据...", 2000, 5, 0);
+                };
+
+            };
+            setDate_s = function(elem, year, month, day) {
+                var json = {
+                    "year" : year,
+                    "month" : month,
+                    "day" : day,
+                };
+                var mon = Number(month);
+                if (mon < 10) {
+                    var mona = "0" + mon
+                } else {
+                    var mona = mon;
+                };
+                var zz = month - 1;
+                if (zz < 10) {
+                    var syu = '0' + zz;
+                } else {
+                    var syu = zz;
+                };
+                $("#datePick").attr("ST_date", year + "-" + mona);
+                //$("#datePick").attr("jiny", year + "." + month);
+                //$("#datePick").attr("syue", year + "." + syu);
+                //$("#datePick").attr("snian", (year-1) + "." + month);
+                $("#datePick").text(year + "年" + mona + "月");
+
+            };
+        };
+
+        //调用接口
+
+        function getInfo(dateStr, carrier, tmcName) {
+            appcan.window.openToast("正在加载数据...", 0, 5, 0);
+            //提示加载数据
+            // var dateStr=encodeURIComponent('2017-04');
+            // var carrier='MU,KN,FM';
+            // var tmcName=encodeURIComponent('东美');
+
+            var dateStr = dateStr;
+            var carrier = carrier;
+            var tmcName = tmcName;
+            var flag = 0;
+            var data = 'dateStr=' + dateStr + '&carrier=' + carrier + '&tmcName=' + tmcName + '&flag=' + flag;
+            var url = 'http://172.28.32.217:9080/yxw/expMppRpt_groupAndClientMonthData.action?' + data;
+            $.ajax({
+                url : url,
+                type : "GET",
+                datatype : "json",
+                success : function(data) {
+                    appcan.window.closeToast();
+                    //数据出来后关闭提示:加载数据
+                    var objArr = JSON.parse(data);
+                    if (objArr.status != "1" || objArr.message != "成功") {
+                        appcan.window.alert({
+                            title : "提示",
+                            content : "暂无数据",
+                            buttons : ['确定'],
+                            callback : function(err, data, dataType, optId) {
+                                // appcan.window.open("jthsymtmc-y","jthsymtmc-y.html")//点击运行查询跳转页面
+                                uexWindow.evaluateScript("", 0, "appcan.window.close(-1)")
+                            }
+                        });
+                    };
+                    //公用方法，千分位
+                    function format(num) {
+                        if (num == "---") {
+                            return num
+                        }
+                        num = Number(num);
+                        return (num.toFixed(2) + '').replace(/\d{1,3}(?=(\d{3})+(\.\d*)?$)/g, '$&,');
+
+                    }
+
+                    // 代理人月度总销量
+                    var zlrzxl = objArr.Tmc_Total_SalesVolume;
+                    //万元单位
+                    var dylxsl = zlrzxl / 10000;
+                    //千分位
+                    var dylxslqfw = format(dylxsl);
+                    $('.dlrxsl').html(dylxslqfw)
+                    // 国内航线月度总销量
+                    var gnhxzxl = objArr.D_Lane_Total_SalesVolume;
+                    var gnhxydxsl = gnhxzxl / 10000;
+                    var gnhxydxslqfw = format(gnhxydxsl);
+                    $('.gnhxxsl').html(gnhxydxslqfw)
+                    //国际航线月度总销量
+                    var gjhxyzxl = objArr.I_Lane_Total_SalesVolume;
+                    var gjhxydxsl = gjhxyzxl / 10000;
+                    var gjhxydxslqfw = format(gjhxydxsl);
+                    $('.gjhxxsl').html(gjhxydxslqfw)
+                    var temphtml_1 = "";
+                    var temphtml_2 = "";
+                    var temphtml_3 = "";
+                    for (var i = 0; i < objArr.data.length; i++) {
+                        //客户编号
+                        var khbh = objArr.data[i].corp_Id;
+                        //集团客户名称
+                        var jtkhmc = objArr.data[i].corp_Name;
+                        //集团客户收入
+                        var jtkhsr = objArr.data[i].cur_Total_Revenue;
+                        //集团客户收入处理（万元）
+                        var jtkhsrwy = format(jtkhsr / 10000);
+                        //国内集团客户收入
+                        var gnjtkhsr = objArr.data[i].d_Cur_Total_Revenue;
+                        //国内客户收入处理（万元）
+                        var gnjtkhsrwy = format(gnjtkhsr / 10000);
+                        //国内第一航线目的地
+                        var gndyhxm = objArr.data[i].d_FirstSegment;
+                        if (gndyhxm == "") {
+                            gndyhxm = "----";
+                        }
+                        //国内第一航线
+                        var gndyhxz = objArr.data[i].d_FirstTotal;
+                        //国内第二航线目的地
+                        var gnderhxm = objArr.data[i].d_SecondSegment;
+                        if (gnderhxm == "") {
+                            gnderhxm = "----";
+                        }
+                        //国内第二航线
+                        var gnderhxz = objArr.data[i].d_SecondTotal;
+                        //国内第三航线目的地
+                        var gndshxm = objArr.data[i].d_ThirdSegment;
+                        if (gndshxm == "") {
+                            gndshxm = "----";
+                        }
+                        //国内第三航线
+                        var gndshxz = objArr.data[i].d_ThirdTotal;
+                        //国际集团客户收入
+                        var gjjtkhsr = objArr.data[i].i_Cur_Total_Revenue;
+                        //国际客户收入处理（万元）
+                        var gjjtkhsrwy = format(gjjtkhsr / 10000);
+                        //国际第一航线目的地
+                        var gjdyhxm = objArr.data[i].i_FirstSegment;
+                        if (gjdyhxm == "") {
+                            gjdyhxm = "----";
+                        }
+                        //国际第一航线
+                        var gjdyhxz = objArr.data[i].i_FirstTotal;
+                        //国际第二航线目的地
+                        var gjderhxm = objArr.data[i].i_SecondSegment;
+                        if (gjderhxm == "") {
+                            gjderhxm = "----";
+                        }
+                        //国际第二航线
+                        var gjderhxz = objArr.data[i].i_SecondTotal;
+                        //国际第三航线目的地
+                        var gjdshxm = objArr.data[i].i_ThirdSegment;
+                        if (gjdshxm == "") {
+                            gjdshxm = "----";
+                        }
+                        //国际第三航线
+                        var gjdshxz = objArr.data[i].i_ThirdTotal;
+                        //同年上月收入
+                        var qntysr = objArr.data[i].last_Total_Revenue;
+                        //去年同月收入
+                        var tnsysr = objArr.data[i].ly_Total_Revenue;
+                        //集团客户销量环比  今年同月/同年上月
+                        var xshb = (((jtkhsr / qntysr) - 1) * 100).toFixed(2);
+                        if (qntysr == 0 || qntysr == "") {
+                            xshb = "---";
+                        } else {
+                            xshb = xshb + "%";
+                        }
+
+                        //集团客户销量同比    今年同月/去年同月
+                        var xstb = (((jtkhsr / tnsysr) - 1) * 100).toFixed(2);
+                        if (tnsysr == 0 || tnsysr == "") {
+                            xstb = "---";
+                        } else {
+                            xstb = xstb + "%";
+                        };
+                        //国际第一航线销售占比
+                        var gjdyhxszzb = ((gjdyhxz / jtkhsr) * 100).toFixed(2);
+                        if (jtkhsr == 0 || jtkhsr == '' || gjdyhxz == '') {
+                            gjdyhxszzb = "---";
+                        } else if (gjdyhxz == 0) {
+                            gjdyhxszzb = '0.00' + '%';
+                        } else {
+                            gjdyhxszzb = gjdyhxszzb + "%";
+                        }
+                        //国际第二航线销售占比
+                        var gjderhxszzb = ((gjderhxz / jtkhsr) * 100).toFixed(2);
+                        if (jtkhsr == 0 || jtkhsr == '' || gjderhxz == '') {
+                            gjderhxszzb = "---";
+                        } else if (gjderhxz == 0) {
+                            gjderhxszzb = '0.00' + '%';
+                        } else {
+                            gjderhxszzb = gjderhxszzb + "%";
+                        }
+                        //国际第三航线销售占比
+                        var gjdshxszzb = ((gjdshxz / jtkhsr)  * 100).toFixed(2);
+                        if (jtkhsr == 0 || jtkhsr == '' || gjdshxz == '') {
+                            gjdshxszzb = "---";
+                        } else if (gjdshxz == 0) {
+                            gjdshxszzb = '0.00' + '%';
+                        } else {
+                            gjdshxszzb = gjdshxszzb + "%";
+                        }
+                        //国内第一航线销售占比
+                        var gndyhxszzb = ((gndyhxz / jtkhsr) * 100).toFixed(2);
+                        if (jtkhsr == 0 || jtkhsr == '' || gndyhxz == '') {
+                            gndyhxszzb = "---";
+                        } else if (gndyhxz == 0) {
+                            gndyhxszzb = '0.00' + '%';
+                        } else {
+                            gndyhxszzb = gndyhxszzb + "%";
+                        }
+                        //国内第二航线销售占比
+                        var gnderhxszzb = ((gnderhxz / jtkhsr) * 100).toFixed(2);
+                        if (jtkhsr == 0 || jtkhsr == '' || gnderhxz == '') {
+                            gndyhxszzb = "---";
+                        } else if (gnderhxz == 0) {
+                            gnderhxszzb = '0.00' + '%';
+                        } else {
+                            gnderhxszzb = gnderhxszzb + "%";
+                        }
+                        //国内第三航线销售占比
+                        var gndshxszzb = ((gndshxz / jtkhsr) * 100).toFixed(2);
+                        if (jtkhsr == 0 || jtkhsr == '' || gndshxz == '') {
+                            gndshxszzb = "---";
+                        } else if (gnderhxz == 0) {
+                            gndshxszzb = '0.00' + '%';
+                        } else {
+                            gndshxszzb = gndshxszzb + "%";
+                        }
+                        temphtml_1 += '<div class="khsrxq">';
+                        temphtml_1 += '<div class="khxq_0 ub ub-ac">';
+                        temphtml_1 += '<div>' + khbh + '</div>';
+                        temphtml_1 += '<div>' + jtkhmc + '</div></div>';
+                        temphtml_1 += '<div class="khsr ub ub-ac">';
+                        temphtml_1 += '<div>' + jtkhsrwy + '</div>';
+                        temphtml_1 += '<div>' + gnjtkhsrwy + '</div>';
+                        temphtml_1 += '<div>' + gjjtkhsrwy + '</div>';
+                        temphtml_1 += '<div>' + xstb + '</div>';
+                        temphtml_1 += '<div>' + xshb + '</div></div></div>';
+
+                        temphtml_2 += '<div class="gjsrxq">';
+                        temphtml_2 += '<div class="gjxq_0 ub ub-ac">';
+                        temphtml_2 += '<div>' + khbh + '</div>';
+                        temphtml_2 += '<div>' + jtkhmc + '</div>';
+                        temphtml_2 += '</div>';
+                        temphtml_2 += '<div class="gjsr ub ub-ac">';
+                        temphtml_2 += '<div class="dyck">';
+                        temphtml_2 += '<div>' + gjdyhxm + '</div>';
+                        temphtml_2 += '<div>' + gjdyhxszzb + '</div></div>';
+                        temphtml_2 += '<div class="derck">';
+                        temphtml_2 += '<div>' + gjderhxm + '</div>';
+                        temphtml_2 += '<div>' + gjderhxszzb + '</div></div>';
+                        temphtml_2 += '<div class="dsck">';
+                        temphtml_2 += '<div>' + gjdshxm + '</div>';
+                        temphtml_2 += '<div>' + gjdshxszzb + '</div></div>';
+                        temphtml_2 += '</div>';
+                        temphtml_2 += '</div>';
+
+                        temphtml_3 += '<div class="gnsrxq">';
+                        temphtml_3 += '<div class="gnxq_0 ub ub-ac">';
+                        temphtml_3 += '<div>' + khbh + '</div>';
+                        temphtml_3 += '<div>' + jtkhmc + '</div></div>';
+                        temphtml_3 += '<div class="gnsr ub ub-ac">';
+                        temphtml_3 += '<div class="gndyck">';
+                        temphtml_3 += '<div>' + gndyhxm + '</div>';
+                        temphtml_3 += '<div>' + gndyhxszzb + '</div></div>';
+                        temphtml_3 += '<div class="gnderck">';
+                        temphtml_3 += '<div>' + gnderhxm + '</div>';
+                        temphtml_3 += '<div>' + gnderhxszzb + '</div></div>';
+                        temphtml_3 += '<div class="gndsck">';
+                        temphtml_3 += '<div>' + gndshxm + '</div>';
+                        temphtml_3 += '<div>' + gndshxszzb + '</div></div></div></div>';
+
+                    }
+                    $(".khsrxq_0").html(temphtml_1);
+                    $(".gjsrxq_0").html(temphtml_2);
+                    $(".gnsrxq_0").html(temphtml_3);
+                }
+            })
+        }
+    </script>
+</html>
